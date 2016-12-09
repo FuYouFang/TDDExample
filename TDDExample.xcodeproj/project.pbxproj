@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5E210041DF9464B008BCC47 /* FYFMockPersonDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E210031DF9464B008BCC47 /* FYFMockPersonDelegate.m */; };
+		C5E210071DF958B6008BCC47 /* FYFInspectablePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E210061DF958B6008BCC47 /* FYFInspectablePerson.m */; };
+		C5E2100A1DF97352008BCC47 /* FYFPerson+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E210091DF97352008BCC47 /* FYFPerson+Tests.m */; };
+		C5E2100D1DF97DDD008BCC47 /* FYFManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2100C1DF97DDD008BCC47 /* FYFManager.m */; };
+		C5E210121DF97ED8008BCC47 /* FYFManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E210111DF97ED8008BCC47 /* FYFManagerTests.m */; };
 		C5FE8B0A1DF83B0F00818AD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FE8B091DF83B0F00818AD4 /* main.m */; };
 		C5FE8B0D1DF83B0F00818AD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FE8B0C1DF83B0F00818AD4 /* AppDelegate.m */; };
-		C5FE8B101DF83B0F00818AD4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FE8B0F1DF83B0F00818AD4 /* ViewController.m */; };
 		C5FE8B151DF83B1000818AD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5FE8B141DF83B1000818AD4 /* Assets.xcassets */; };
 		C5FE8B181DF83B1000818AD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FE8B161DF83B1000818AD4 /* LaunchScreen.storyboard */; };
-		C5FE8B231DF83B1000818AD4 /* TDDExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FE8B221DF83B1000818AD4 /* TDDExampleTests.m */; };
 		C5FE8B2E1DF83B1000818AD4 /* TDDExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FE8B2D1DF83B1000818AD4 /* TDDExampleUITests.m */; };
+		C5FE8B3C1DF8F97600818AD4 /* FYFViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FE8B3B1DF8F97600818AD4 /* FYFViewControllerTests.m */; };
+		C5FE8B3F1DF8FA2800818AD4 /* FYFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FE8B3E1DF8FA2800818AD4 /* FYFViewController.m */; };
+		C5FE8B411DF8FA5300818AD4 /* FYFPersonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FE8B401DF8FA5300818AD4 /* FYFPersonTests.m */; };
+		C5FE8B441DF8FA8100818AD4 /* FYFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FE8B431DF8FA8100818AD4 /* FYFPerson.m */; };
+		C5FE8B451DF8FA8100818AD4 /* FYFPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FE8B431DF8FA8100818AD4 /* FYFPerson.m */; };
+		C5FE8B4A1DF90CC400818AD4 /* FYFJob.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FE8B491DF90CC400818AD4 /* FYFJob.m */; };
+		C5FE8B4B1DF90CC400818AD4 /* FYFJob.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FE8B491DF90CC400818AD4 /* FYFJob.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,21 +44,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C5E210021DF9464B008BCC47 /* FYFMockPersonDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYFMockPersonDelegate.h; sourceTree = "<group>"; };
+		C5E210031DF9464B008BCC47 /* FYFMockPersonDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYFMockPersonDelegate.m; sourceTree = "<group>"; };
+		C5E210051DF958B6008BCC47 /* FYFInspectablePerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYFInspectablePerson.h; sourceTree = "<group>"; };
+		C5E210061DF958B6008BCC47 /* FYFInspectablePerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYFInspectablePerson.m; sourceTree = "<group>"; };
+		C5E210081DF97352008BCC47 /* FYFPerson+Tests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FYFPerson+Tests.h"; sourceTree = "<group>"; };
+		C5E210091DF97352008BCC47 /* FYFPerson+Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FYFPerson+Tests.m"; sourceTree = "<group>"; };
+		C5E2100B1DF97DDD008BCC47 /* FYFManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYFManager.h; sourceTree = "<group>"; };
+		C5E2100C1DF97DDD008BCC47 /* FYFManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYFManager.m; sourceTree = "<group>"; };
+		C5E210111DF97ED8008BCC47 /* FYFManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYFManagerTests.m; sourceTree = "<group>"; };
 		C5FE8B051DF83B0F00818AD4 /* TDDExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5FE8B091DF83B0F00818AD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C5FE8B0B1DF83B0F00818AD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C5FE8B0C1DF83B0F00818AD4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C5FE8B0E1DF83B0F00818AD4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C5FE8B0F1DF83B0F00818AD4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C5FE8B141DF83B1000818AD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5FE8B171DF83B1000818AD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5FE8B191DF83B1000818AD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5FE8B1E1DF83B1000818AD4 /* TDDExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C5FE8B221DF83B1000818AD4 /* TDDExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDDExampleTests.m; sourceTree = "<group>"; };
 		C5FE8B241DF83B1000818AD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5FE8B291DF83B1000818AD4 /* TDDExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TDDExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5FE8B2D1DF83B1000818AD4 /* TDDExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDDExampleUITests.m; sourceTree = "<group>"; };
 		C5FE8B2F1DF83B1000818AD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5FE8B3B1DF8F97600818AD4 /* FYFViewControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYFViewControllerTests.m; sourceTree = "<group>"; };
+		C5FE8B3D1DF8FA2800818AD4 /* FYFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYFViewController.h; sourceTree = "<group>"; };
+		C5FE8B3E1DF8FA2800818AD4 /* FYFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYFViewController.m; sourceTree = "<group>"; };
+		C5FE8B401DF8FA5300818AD4 /* FYFPersonTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYFPersonTests.m; sourceTree = "<group>"; };
+		C5FE8B421DF8FA8100818AD4 /* FYFPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYFPerson.h; sourceTree = "<group>"; };
+		C5FE8B431DF8FA8100818AD4 /* FYFPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYFPerson.m; sourceTree = "<group>"; };
+		C5FE8B481DF90CC400818AD4 /* FYFJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYFJob.h; sourceTree = "<group>"; };
+		C5FE8B491DF90CC400818AD4 /* FYFJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYFJob.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +105,6 @@
 			children = (
 				C5FE8B071DF83B0F00818AD4 /* TDDExample */,
 				C5FE8B211DF83B1000818AD4 /* TDDExampleTests */,
-				C5FE8B2C1DF83B1000818AD4 /* TDDExampleUITests */,
 				C5FE8B061DF83B0F00818AD4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,8 +124,14 @@
 			children = (
 				C5FE8B0B1DF83B0F00818AD4 /* AppDelegate.h */,
 				C5FE8B0C1DF83B0F00818AD4 /* AppDelegate.m */,
-				C5FE8B0E1DF83B0F00818AD4 /* ViewController.h */,
-				C5FE8B0F1DF83B0F00818AD4 /* ViewController.m */,
+				C5FE8B3D1DF8FA2800818AD4 /* FYFViewController.h */,
+				C5FE8B3E1DF8FA2800818AD4 /* FYFViewController.m */,
+				C5FE8B421DF8FA8100818AD4 /* FYFPerson.h */,
+				C5FE8B431DF8FA8100818AD4 /* FYFPerson.m */,
+				C5E2100B1DF97DDD008BCC47 /* FYFManager.h */,
+				C5E2100C1DF97DDD008BCC47 /* FYFManager.m */,
+				C5FE8B481DF90CC400818AD4 /* FYFJob.h */,
+				C5FE8B491DF90CC400818AD4 /* FYFJob.m */,
 				C5FE8B141DF83B1000818AD4 /* Assets.xcassets */,
 				C5FE8B161DF83B1000818AD4 /* LaunchScreen.storyboard */,
 				C5FE8B191DF83B1000818AD4 /* Info.plist */,
@@ -122,7 +151,16 @@
 		C5FE8B211DF83B1000818AD4 /* TDDExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				C5FE8B221DF83B1000818AD4 /* TDDExampleTests.m */,
+				C5FE8B3B1DF8F97600818AD4 /* FYFViewControllerTests.m */,
+				C5E210021DF9464B008BCC47 /* FYFMockPersonDelegate.h */,
+				C5E210031DF9464B008BCC47 /* FYFMockPersonDelegate.m */,
+				C5E210051DF958B6008BCC47 /* FYFInspectablePerson.h */,
+				C5E210061DF958B6008BCC47 /* FYFInspectablePerson.m */,
+				C5E210081DF97352008BCC47 /* FYFPerson+Tests.h */,
+				C5E210091DF97352008BCC47 /* FYFPerson+Tests.m */,
+				C5FE8B401DF8FA5300818AD4 /* FYFPersonTests.m */,
+				C5E210111DF97ED8008BCC47 /* FYFManagerTests.m */,
+				C5FE8B2C1DF83B1000818AD4 /* TDDExampleUITests */,
 				C5FE8B241DF83B1000818AD4 /* Info.plist */,
 			);
 			path = TDDExampleTests;
@@ -134,7 +172,8 @@
 				C5FE8B2D1DF83B1000818AD4 /* TDDExampleUITests.m */,
 				C5FE8B2F1DF83B1000818AD4 /* Info.plist */,
 			);
-			path = TDDExampleUITests;
+			name = TDDExampleUITests;
+			path = ../TDDExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +238,7 @@
 		C5FE8AFD1DF83B0F00818AD4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FYF;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = fyf;
 				TargetAttributes = {
@@ -269,9 +309,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5FE8B101DF83B0F00818AD4 /* ViewController.m in Sources */,
+				C5FE8B3F1DF8FA2800818AD4 /* FYFViewController.m in Sources */,
+				C5E2100D1DF97DDD008BCC47 /* FYFManager.m in Sources */,
+				C5FE8B4A1DF90CC400818AD4 /* FYFJob.m in Sources */,
 				C5FE8B0D1DF83B0F00818AD4 /* AppDelegate.m in Sources */,
 				C5FE8B0A1DF83B0F00818AD4 /* main.m in Sources */,
+				C5FE8B441DF8FA8100818AD4 /* FYFPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,7 +322,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5FE8B231DF83B1000818AD4 /* TDDExampleTests.m in Sources */,
+				C5FE8B411DF8FA5300818AD4 /* FYFPersonTests.m in Sources */,
+				C5FE8B3C1DF8F97600818AD4 /* FYFViewControllerTests.m in Sources */,
+				C5E210041DF9464B008BCC47 /* FYFMockPersonDelegate.m in Sources */,
+				C5E210121DF97ED8008BCC47 /* FYFManagerTests.m in Sources */,
+				C5FE8B4B1DF90CC400818AD4 /* FYFJob.m in Sources */,
+				C5E2100A1DF97352008BCC47 /* FYFPerson+Tests.m in Sources */,
+				C5FE8B451DF8FA8100818AD4 /* FYFPerson.m in Sources */,
+				C5E210071DF958B6008BCC47 /* FYFInspectablePerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +543,7 @@
 				C5FE8B341DF83B1000818AD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5FE8B351DF83B1000818AD4 /* Build configuration list for PBXNativeTarget "TDDExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +552,7 @@
 				C5FE8B371DF83B1000818AD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C5FE8B381DF83B1000818AD4 /* Build configuration list for PBXNativeTarget "TDDExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +561,7 @@
 				C5FE8B3A1DF83B1000818AD4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
