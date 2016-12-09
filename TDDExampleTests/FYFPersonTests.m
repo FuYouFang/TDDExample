@@ -90,7 +90,6 @@ static NSString *personJSON = @"{"
  */
 - (void)testBirthdayCanBeSeted {
     NSDate *birthday = [NSDate date];
-    XCTAssertThrows(<#expression, ...#>)
     XCTAssertNoThrow(person.birthday = birthday, @"Person's birthday can be setted.");
 }
 
