@@ -90,6 +90,7 @@ static NSString *personJSON = @"{"
  */
 - (void)testBirthdayCanBeSeted {
     NSDate *birthday = [NSDate date];
+    XCTAssertThrows(<#expression, ...#>)
     XCTAssertNoThrow(person.birthday = birthday, @"Person's birthday can be setted.");
 }
 
@@ -122,11 +123,11 @@ static NSString *personJSON = @"{"
 /**
  测试设置属性时是否对检测了有没有符合相关协议
  */
-- (void)testNonConformingObjectCannotBeDelegate {
-    XCTAssertThrows(person.delegate = (id <FYFPersonDelegate>)[NSNull null],
-                    @"NSNull should not be used as the delegate as doesn't "
-                    @"comform to the delegate protocol");
-}
+    - (void)testNonConformingObjectCannotBeDelegate {
+        XCTAssertThrows(person.delegate = (id <FYFPersonDelegate>)[NSNull null],
+                        @"NSNull should not be used as the delegate as doesn't "
+                        @"comform to the delegate protocol");
+    }
 
 #pragma mark - 方法相关
 
@@ -247,14 +248,14 @@ static NSString *personJSON = @"{"
 /**
  测试某个类在某种情况下是否执行了指定的方法
  */
-- (void)testPersonBeginWorkWhenGetNotifacation {
-    objc_removeAssociatedObjects(person);
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:FYFPersonGetNotificationName
-                                                        object:nil];
-    XCTAssertNotNil(person.receiveBeginWorkNotification,
-                    @"person should get a notifacation.");
-    objc_removeAssociatedObjects(person);
-}
+    - (void)testPersonBeginWorkWhenGetNotifacation {
+        objc_removeAssociatedObjects(person);
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:FYFPersonGetNotificationName
+                                                            object:nil];
+        XCTAssertNotNil(person.receiveBeginWorkNotification,
+                        @"person should get a notifacation.");
+        objc_removeAssociatedObjects(person);
+    }
 
 @end

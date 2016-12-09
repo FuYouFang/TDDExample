@@ -15,6 +15,8 @@ static const char *FYFManagerTestsBeginWorkKey = "FYFManagerTestsBeginWorkKey";
 
 @interface FYFPerson (TestSuperclassCalled)
 
+@property (nonatomic, readonly) NSNumber *didCallSuperBeginWork;
+
 @end
 
 @implementation FYFPerson (TestSuperclassCalled)
@@ -24,11 +26,8 @@ static const char *FYFManagerTestsBeginWorkKey = "FYFManagerTestsBeginWorkKey";
                              OBJC_ASSOCIATION_RETAIN);
 }
 
-+ (void)load {
-    Method testMethod = class_getInstanceMethod([FYFPerson class], @selector(managerTests_beginWork:));
-    Method realMethod = class_getInstanceMethod([FYFPerson class], @selector(beginWork:));
-    method_exchangeImplementations(realMethod, testMethod);
-    
+- (NSNumber *)didCallSuperBeginWork {
+    return objc_getAssociatedObject(self, FYFManagerTestsBeginWorkKey);
 }
 
 @end
@@ -56,16 +55,17 @@ static const char *FYFManagerTestsBeginWorkKey = "FYFManagerTestsBeginWorkKey";
 
 
 - (void)testManagerCallSuperBeginWork {
-    
-    FYFPerson *person = [[FYFPerson alloc] init];
-    [person beginWork:nil];
-    
+    // 将类中的方法和分类中的方法对换
+    Method testMethod = class_getInstanceMethod([FYFPerson class], @selector(managerTests_beginWork:));
+    Method realMethod = class_getInstanceMethod([FYFPerson class], @selector(beginWork:));
+    method_exchangeImplementations(realMethod, testMethod);
+
     [manager beginWork:nil];
-    XCTAssertNotNil(objc_getAssociatedObject(manager, FYFManagerTestsBeginWorkKey),
+    XCTAssertNotNil(manager.didCallSuperBeginWork,
                     @"manager should call super -beginWork:");
     
-    
-    //method_exchangeImplementations(realMethod, testMethod);
+    // 调整回来
+    method_exchangeImplementations(realMethod, testMethod);
 }
 
 

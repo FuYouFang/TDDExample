@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C535E01C1DFA542400F5A644 /* FYFManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E2100C1DF97DDD008BCC47 /* FYFManager.m */; };
 		C5E210041DF9464B008BCC47 /* FYFMockPersonDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E210031DF9464B008BCC47 /* FYFMockPersonDelegate.m */; };
 		C5E210071DF958B6008BCC47 /* FYFInspectablePerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E210061DF958B6008BCC47 /* FYFInspectablePerson.m */; };
 		C5E2100A1DF97352008BCC47 /* FYFPerson+Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5E210091DF97352008BCC47 /* FYFPerson+Tests.m */; };
@@ -322,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C535E01C1DFA542400F5A644 /* FYFManager.m in Sources */,
 				C5FE8B411DF8FA5300818AD4 /* FYFPersonTests.m in Sources */,
 				C5FE8B3C1DF8F97600818AD4 /* FYFViewControllerTests.m in Sources */,
 				C5E210041DF9464B008BCC47 /* FYFMockPersonDelegate.m in Sources */,

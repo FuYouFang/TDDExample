@@ -10,5 +10,6 @@
 
 @interface FYFViewController : UIViewController
 
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
